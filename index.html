@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Помощь Нурадилу</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background: #fff5f5;
+  margin: 0;
+  padding: 25px 15px;
+  text-align: center;
+  color: #333;
+}
+.card {
+  background: white;
+  max-width: 430px;
+  margin: 20px auto;
+  padding: 25px 18px;
+  border-radius: 20px;
+  box-shadow: 0 4px 18px #00000015;
+}
+h1 { color: #c62828; }
+.bank {
+  background: #f7f7f7;
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 12px;
+}
+.number {
+  font-size: 21px;
+  font-weight: bold;
+  overflow-wrap: anywhere;
+}
+button {
+  background: #e53935;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 13px 20px;
+  margin: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.note { font-size: 14px; color: #666; }
+</style>
+</head>
+<body>
+
+<div class="card">
+<h1>❤️ Помощь Нурадилу</h1>
+<p>10-летнему Нурадилу требуется лечение.
+Спасибо каждому, кто оказывает поддержку!</p>
+
+<div class="bank">
+<h2>💳 Kaspi Gold</h2>
+<p>Получатель: Акмарал К. (мама)</p>
+<p class="number">8 701 555 81 84</p>
+<button onclick="copyText('87015558184')">
+📋 Скопировать телефон
+</button>
+<p class="number">4400 4303 9753 8833</p>
+<button onclick="copyText('4400430397538833')">
+📋 Скопировать карту
+</button>
+</div>
+
+<div class="bank">
+<h2>💳 Halyk Bank</h2>
+<p>Получатель: Акмарал К.</p>
+<p class="number">8 701 555 81 84</p>
+<button onclick="copyText('87015558184')">
+📋 Скопировать телефон
+</button>
+<p class="number">4003 0351 8752 5980</p>
+<button onclick="copyText('4003035187525980')">
+📋 Скопировать карту
+</button>
+</div>
+
+<p class="note">
+Спасибо за вашу доброту и поддержку! ❤️
+</p>
+<p class="note">
+Перевод выполняется самостоятельно
+через приложение вашего банка.
+</p>
+</div>
+
+<script>
+function copyText(value) {
+  navigator.clipboard.writeText(value).then(
+    () => alert('Номер скопирован!'),
+    () => alert('Не удалось скопировать. Выделите номер вручную.')
+  );
+}
+</script>
+
+</body>
+</html>
